@@ -1,24 +1,26 @@
 package com.example.proyectomovil;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class DetalleActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_dtalle);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        // 1. Encontrar el TextView en tu diseño XML
+        TextView tvDetalle = findViewById(R.id.tvDetalle);
+
+        // 2. Capturar el mensaje enviado desde MainActivity
+        String mensaje = getIntent().getStringExtra("EXTRA_MENSAJE");
+
+        // 3. Mostrar el mensaje en la pantalla si el TextView no es nulo
+        if (mensaje != null && tvDetalle != null) {
+            tvDetalle.setText(mensaje);
+        }
     }
 }

@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, DetalleActivity.class);
             intent.putExtra("EXTRA_MENSAJE", "Hola desde el MainActivity principal");
             startActivity(intent);
+            
         });
 
         // Ir a ConfigActivity
