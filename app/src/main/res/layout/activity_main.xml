@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prototipo 2 - App Móvil"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- SECCIÓN EXPLÍCITOS (3 Obligatorios) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intents Explícitos (Pantallas Propias)"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnExplicito1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Ir a Detalle con Extras"/>
+
+        <Button
+            android:id="@+id/btnExplicito2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Ir a Configuración"/>
+
+        <Button
+            android:id="@+id/btnExplicito3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Ir a Ayuda (FAQ)"/>
+
+        <!-- SECCIÓN IMPLÍCITOS (5 Obligatorios) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Intents Implícitos (Otras Apps del Sistema)"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnImplicito1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Abrir Google Maps"/>
+
+        <Button
+            android:id="@+id/btnImplicito2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Abrir Página Web"/>
+
+        <Button
+            android:id="@+id/btnImplicito3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. Llamar por Teléfono"/>
+
+        <Button
+            android:id="@+id/btnImplicito4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. Enviar Correo Electrónico"/>
+
+        <Button
+            android:id="@+id/btnImplicito5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. Tomar Fotografía (Cámara)"/>
+
+    </LinearLayout>
+</ScrollView>
